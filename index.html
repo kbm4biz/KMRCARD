@@ -10,7 +10,7 @@
         
         <title>اطبع كرتك</title>
 
-        <meta name="viewport" content="width=device-width, initial-scale=.8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <h1 style="font-size:vw"> اطبع كرتك💌</h1>
         <style>
@@ -36,6 +36,8 @@
                 border-radius: 50px;
                 box-shadow:10px 10px 50px grey; 
                 display: flex;
+           max-width: 350px;
+                min-width: 100%;
             }
             .box
             {
@@ -51,6 +53,7 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
+                width: min(90%,1000px);
             }
             .hea
             {
@@ -69,12 +72,13 @@
             {
                 outline: none;
                 margin: 8px;
-                width: 350px;
+               
                 height: 30px;
                 border: none;
                 border-radius: 50px;
                 padding-right: 15px;
-                
+               width: 190px
+            ;
                     text-align: left;
             }
             input:nth-child(2)
@@ -92,14 +96,12 @@
                 align-items: center;
                 background: darkblue;
                 color: #fff;
-                cursor: pointer;
             }
-            
            textarea
             {
                 outline: none;
                 margin: 8px;
-                width: 350px;
+                width:  min(90%,1000px);
                 height: 140px;
                 border: none;
                 border-radius: 20px;
@@ -108,36 +110,8 @@
                resize: none;
                 padding-right: 15px;
                 font-size: larger;
-                     
                   text-align: center;
             }
-
-@media(Max-width: 500px) {
-   
-
-    .container
-            {
-                background: #fff;
-                border: none;
-                border-radius: 50px;
-                box-shadow:10px 10px 50px rgb(196, 4, 4); 
-                height: 150px;
-                width: 390px;
-            }
-
-            form
-            {
-                align-items: center;
-                justify-content: center;
-                
-                flex-direction: column;
-                
-            }
-            .box{
-height: 150px;
-                width: 390px;
-            }
-}
 
 
 
